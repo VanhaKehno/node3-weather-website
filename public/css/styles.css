@@ -3,6 +3,13 @@ h1 {
 }
 
 img {
-  height: 250px;
-  transform: rotate(-90deg)
+  width: 250px;
+}
+
+p {
+  font-size: 12px
+}
+
+div {
+  position: static;
 }
