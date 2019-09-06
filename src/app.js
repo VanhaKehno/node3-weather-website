@@ -40,7 +40,14 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/weather', (req, res) => {
+  if (!req.query.address){
+    return res.send({
+      error: 'address term must be provided'
+    })
+  }
+
   res.send({
+    address: req.query.address,
     location:'Muurame',
     weather: "Rainy as fuck"
   })
