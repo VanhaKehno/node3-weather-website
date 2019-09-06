@@ -64,7 +64,7 @@ app.get('/weather', (req, res) => {
         latitude,
         longitude,
         summary,
-        current: currently
+        forecast: currently
       })
     })
   })

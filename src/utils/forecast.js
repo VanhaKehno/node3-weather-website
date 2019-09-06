@@ -5,7 +5,7 @@ const forecast = (latitude, longitude, callback) => {
     + encodeURIComponent(latitude) 
     + ','
     + encodeURIComponent(longitude) + 
-    '?units=si&lang=fi';
+    '?units=si&lang=en';
 
   request({url, json: true}, (error, { body }) => {
     if (error) {
